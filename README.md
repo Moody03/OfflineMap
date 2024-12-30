@@ -16,8 +16,7 @@ The app includes storing recent and favourite locations, and calculating routes 
 - **Java**: The programming language used for the app's code.
 - **Mapsforge**: Used for rendering offline maps, providing map navigation features.
 - **Graphhopper**: Used for route calculation and providing directions for users.
-- **Firebase**: Used for user authentication (Login/Signup feature) and database storage.
-- **SQLite**: Used for local storage to store recent and favourite locations.
+- **SQLite**: Used for user authentication (Login/Signup feature) and database storage, and local storage to store recent and favourite locations.
 
 
 ## Prerequisites
@@ -28,7 +27,7 @@ Before you begin, ensure that you have the following installed:
 - Java Development Kit (JDK)
 - Android SDK
 - Gradle (Usually installed with Android Studio)
-- Firebase project (for user authentication)
+
 
 ## Setup
 

@@ -1,0 +1,52 @@
+plugins {
+    alias(libs.plugins.androidApplication)
+}
+
+android {
+    namespace 'com.example.offmap'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.offmap"
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+    implementation libs.appcompat
+    implementation libs.material
+    implementation 'org.mapsforge:mapsforge-map-android:0.21.0'
+    implementation 'org.mapsforge:mapsforge-map:0.21.0'
+    implementation 'org.mapsforge:mapsforge-core:0.21.0'
+    implementation 'org.mapsforge:mapsforge-themes:0.21.0'
+    implementation 'org.mapsforge:vtm-android:0.11.0'
+    implementation 'com.graphhopper:graphhopper-core:2.3'
+    implementation 'com.graphhopper:graphhopper-reader-osm:2.3'
+
+    implementation libs.play.services.location
+    implementation libs.runtime.android
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+
+
+
+
+}

@@ -1,0 +1,38 @@
+[versions]
+agp = "8.3.1"
+gradleCore = "3.1.4"
+graphhopperReaderOsm = "5.0"
+graphhopperCore = "5.0"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+mapsforgeCore = "0.21.0"
+mapsforgeMap = "0.21.0"
+mapsforgeMapAndroid = "0.21.0"
+mapsforgeThemes = "0.21.0"
+material = "1.11.0"
+playServicesLocation = "21.3.0"
+vtmAndroid = "0.10.0"
+runtimeAndroid = "1.6.8"
+
+[libraries]
+gradle-core = { module = "com.android.tools.build:gradle-core", version.ref = "gradleCore" }
+graphhopper-reader-osm = { module = "com.graphhopper:graphhopper-reader-osm", version.ref = "graphhopperReaderOsm" }
+graphhopper-core = { module = "com.graphhopper:graphhopper-core", version.ref = "graphhopperCore" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+mapsforge-map-android = { module = "org.mapsforge:mapsforge-map-android", version.ref = "mapsforgeMapAndroid" }
+mapsforge-mapsforge-core = { module = "org.mapsforge:mapsforge-core", version.ref = "mapsforgeCore" }
+mapsforge-mapsforge-map = { module = "org.mapsforge:mapsforge-map", version.ref = "mapsforgeMap" }
+mapsforge-mapsforge-themes = { module = "org.mapsforge:mapsforge-themes", version.ref = "mapsforgeThemes" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+play-services-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "playServicesLocation" }
+vtm-android = { module = "org.mapsforge:vtm-android", version.ref = "vtmAndroid" }
+runtime-android = { group = "androidx.compose.runtime", name = "runtime-android", version.ref = "runtimeAndroid" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+
